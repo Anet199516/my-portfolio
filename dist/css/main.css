@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -118,7 +119,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.6); }
+      background: rgba(68, 68, 68, 0.8); }
 
 h1, h2, h3 {
   margin: 0;
@@ -182,16 +183,32 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #515151;
-    padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+    margin-top: 25px;
+    text-align: center;
+    border-bottom: #eece1a 3px solid; }
+  .about-info .img-skills {
+    width: 90px;
+    height: 90px;
+    margin-left: 20px;
+    margin-bottom: 5px; }
+    .about-info .img-skills:hover {
+      cursor: pointer; }
 
 .projects {
   display: grid;
-  grid-gap: 0.7rem;
+  grid-gap: 0.5rem;
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
+    background: #f0f0f0;
+    /* Цвет фона */
+    border-radius: 15px;
+    /* Радиус скругления */
+    padding: 2%;
+    /* Поля */
     width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
@@ -218,6 +235,8 @@ main {
         color: #000; }
 
 .btn, .btn-dark, .btn-light {
+  border-radius: 15px;
+  /* Радиус скругления */
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
@@ -239,7 +258,7 @@ main {
   padding: 1rem;
   background: #373737;
   color: #fff;
-  height: 60px; }
+  height: 30px; }
 
 @media screen and (min-width: 1171px) {
   .projects {

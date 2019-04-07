@@ -116,20 +116,41 @@ main {
     }
     
     .job {
-        background: lighten($primary-color, 5);
-        padding: 0.5rem;
-        border-bottom: $secondary-color 5px solid;
+        margin-top: 25px;
+        text-align: center;
+        border-bottom: $secondary-color 3px solid;
     }
+
+    .img-skills {
+        width: 90px;
+        height: 90px;
+        margin-left: 20px;
+        margin-bottom: 5px;
+
+        &:hover {
+            cursor: pointer;
+        }
+       
+    }
+
+    
 }
 
 // work/projects
 .projects {
     display: grid;
-    grid-gap: 0.7rem;
+    grid-gap: 0.5rem;
     grid-template-columns: repeat(3, 1fr);
 
+
     img {
+        background: #f0f0f0; /* Цвет фона */
+        border-radius: 15px; /* Радиус скругления */
+        padding: 2%; /* Поля */
         width: 100%;
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
         border: 3px #fff solid;
 
         &:hover {
@@ -171,6 +192,7 @@ main {
 //button styles
 
 .btn {
+    border-radius: 15px; /* Радиус скругления */
     display: block;
     padding: 0.5rem 1rem;
     border: 0;
@@ -198,8 +220,9 @@ main {
     padding: 1rem;
     background: darken($primary-color, 5);
     color: set-text-color($primary-color);
-    height: 60px;
+    height: 30px;
 }
+
 
 @import 'mobile';
 
